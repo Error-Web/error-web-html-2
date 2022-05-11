@@ -205,7 +205,7 @@ body{
 	color:#000000;
 	}
 	
-.text4{
+.text3{
 	background:#000000;
 	box-sizing:border-box;
 	padding:10px 3px;
@@ -213,7 +213,7 @@ body{
 	color:#FFFFFF;
 	}
 	
-.text4 h1{
+.text3 h1{
 	margin:0;
 	padding:0 0 20px;
 	text-align:center;
@@ -222,7 +222,7 @@ body{
 	background: linear-gradient(110deg, #000000 60%,#FF000E 60%);
 	}
 	
-.text4 p{
+.text3 p{
 	margin:0;
 	padding:0 0 20px;
 	text-align:center;

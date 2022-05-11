@@ -848,3 +848,184 @@ function setThemeMode() {
  <br class="hidesm">
  </div>
 </nav>
+
+
+</div>
+</div>
+
+<div id='myAccordion' class="w3-card-2 w3-center w3-hide-large w3-hide-medium ws-grey" style="width:100%;position:absolute;display:none;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-xxlarge w3-right">&times;</a><br>
+  <div class="w3-container w3-padding-32">
+    <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('tutorials');" href="javascript:void(0);">Tutorials <i class='fa fa-caret-down'></i></a>
+    <div id="sectionxs_tutorials" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+    <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('references')" href="javascript:void(0);">References <i class='fa fa-caret-down'></i></a>
+    <div id="sectionxs_references" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+    <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('exercises')" href="javascript:void(0);">Exercises <i class='fa fa-caret-down'></i></a>
+    <div id="sectionxs_exercises" class="w3-left-align w3-show" style="background-color:#282A35;color:white;"></div>
+    <a class="w3-button w3-block" style="font-size:22px;" href="/cert/default.asp" target="_blank">Paid Courses</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://www.w3schools.com/spaces" target="_blank" onclick="ga('send', 'event', 'spacesFromTutorialsAcc', 'click');" title="Get Your Own Website With W3schools Spaces">Spaces</a>
+    <a class="w3-button w3-block" style="font-size:22px;" target="_blank"href="https://www.w3schools.com/videos/index.php" onclick="ga('send', 'event', 'Videos' , 'fromTopnavMain')" title="Video Tutorials">Videos</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="https://shop.w3schools.com" target="_blank">Shop</a>
+    <a class="w3-button w3-block" style="font-size:22px;" href="/pro/index.php">Pro</a>
+  </div>
+</div>
+
+<script>
+(
+function setThemeCheckboxes() {
+  var x = localStorage.getItem("preferredmode");
+  var y = localStorage.getItem("preferredpagemode");  
+  if (x == "dark") {
+    document.getElementById("radio_darkcode").checked = true;
+    
+  }
+  if (y == "dark") {
+    document.getElementById("radio_darkpage").checked = true;
+  }
+})();
+
+function mouseoverdarkicon() {
+  if(window.matchMedia("(pointer: coarse)").matches) {
+    return false;
+  }
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "44px";
+}
+function mouseoutofdarkicon() {
+  var a = document.getElementById("darkmodemenu");
+  a.style.top = "-40px";
+}
+function changepagetheme(n) {
+  var a = document.getElementById("radio_darkcode");
+  var b = document.getElementById("radio_darkpage");
+  document.body.className = document.body.className.replace("darktheme", "");
+  document.body.className = document.body.className.replace("darkpagetheme", "");    
+  document.body.className = document.body.className.replace("  ", " ");
+  if (a.checked && b.checked) {
+    localStorage.setItem("preferredmode", "light");
+    localStorage.setItem("preferredpagemode", "light");
+    a.checked = false;
+    b.checked = false;    
+  } else {
+    document.body.className += " darktheme";
+    document.body.className += " darkpagetheme";  
+    localStorage.setItem("preferredmode", "dark");
+    localStorage.setItem("preferredpagemode", "dark");
+    a.checked = true;
+    b.checked = true;    
+  }
+}
+
+
+function click_darkpage() {
+  var b = document.getElementById("radio_darkpage");
+  if (b.checked) {
+    document.body.className += " darkpagetheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("darkpagetheme", "");
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredpagemode", "light");
+  }
+}
+
+function click_darkcode() {
+  var a = document.getElementById("radio_darkcode");
+  if (a.checked) {
+    document.body.className += " darktheme";
+    document.body.className = document.body.className.replace("  ", " ");    
+    localStorage.setItem("preferredmode", "dark");
+  } else {
+    document.body.className = document.body.className.replace("darktheme", "");
+    document.body.className = document.body.className.replace("  ", " ");
+    localStorage.setItem("preferredmode", "light");
+  }
+}
+
+</script>
+
+
+<div class='w3-sidebar w3-collapse' id='sidenav'>
+  <div id='leftmenuinner'>
+    <div id='leftmenuinnerinner'>
+<!--  <a href='javascript:void(0)' onclick='close_menu()' class='w3-button w3-hide-large w3-large w3-display-topright' style='right:16px;padding:3px 12px;font-weight:bold;'>&times;</a>-->
+<h2 class="left"><span class="left_h2">Colors</span> Tutorial</h2>
+<a target="_top" href="default.asp">Colors HOME</a>
+<a target="_top" href="colors_names.asp">Color Names</a>
+<a target="_top" href="colors_hex.asp">Color Values</a>
+<a target="_top" href="colors_groups.asp">Color Groups</a>
+<a target="_top" href="colors_shades.asp">Color Shades</a>
+<a target="_top" href="colors_picker.asp">Color Picker</a>
+<a target="_top" href="colors_mixer.asp">Color Mixer</a>
+<a target="_top" href="colors_converter.asp">Color Converter</a>
+<a target="_top" href="colors_rgb.asp">Color RGB</a>
+<a target="_top" href="colors_hexadecimal.asp">Color HEX</a>
+<a target="_top" href="colors_hsl.asp">Color HSL</a>
+<a target="_top" href="colors_hwb.asp">Color HWB</a>
+<a target="_top" href="colors_cmyk.asp">Color CMYK</a>
+<a target="_top" href="colors_ncol.asp">Color NCol</a>
+<a target="_top" href="colors_gradient.asp">Color Gradient</a>
+<a target="_top" href="colors_theory.asp">Color Theory</a>
+<a target="_top" href="colors_wheels.asp">Color Wheels</a>
+<a target="_top" href="colors_currentcolor.asp">Color currentcolor</a>
+<a target="_top" href="colors_hues.asp">Color Hues</a>
+<a target="_top" href="colors_schemes.asp">Color Schemes</a>
+<a target="_top" href="colors_palettes.asp">Color Palettes</a>
+<a target="_top" href="colors_brands.asp">Color Brands</a>
+<a target="_top" href="colors_w3css.asp">Color W3.CSS</a>
+<a target="_top" href="colors_metro.asp">Color Metro UI</a>
+<a target="_top" href="colors_win8.asp">Color Win8</a>
+<a target="_top" href="colors_flatui.asp">Color Flat UI</a>
+<a target="_top" href="colors_psychology.asp">Color Psychology</a>
+<br>
+<h2 class="left"><span class="left_h2">Color</span> Schemes</h2>
+<a target="_top" href="colors_monochromatic.asp">Colors Monochromatic</a>
+<a target="_top" href="colors_analogous.asp">Colors Analogous</a>
+<a target="_top" href="colors_complementary.asp">Colors Complementary</a>
+<a target="_top" href="colors_triadic.asp">Colors Triadic</a>
+<a target="_top" href="colors_compound.asp">Colors Compound</a>
+<br>
+<h2 class="left"><span class="left_h2">Color</span> Trends</h2>
+<a target="_top" href="colors_trends.asp">Colors of the Year</a>
+<a target="_top" href="colors_2021.asp">Colors 2021</a>
+<a target="_top" href="colors_2020.asp">Colors 2020</a>
+<a target="_top" href="colors_2019.asp">Colors 2019</a>
+<a target="_top" href="colors_2018.asp">Colors 2018</a>
+<a target="_top" href="colors_2017.asp">Colors 2017</a>
+<a target="_top" href="colors_2016.asp">Colors 2016</a>
+<br>
+<h2 class="left"><span class="left_h2">Color</span> Standards</h2>
+<a target="_top" href="colors_fs595.asp">Colors USA</a>
+<a target="_top" href="colors_british.asp">Colors UK</a>
+<a target="_top" href="colors_australia.asp">Colors Australia</a>
+<a target="_top" href="colors_ral.asp">Colors RAL</a>
+<a target="_top" href="colors_nbs.asp">Colors NBS</a>
+<a target="_top" href="colors_ncs.asp">Colors NCS</a>
+<a target="_top" href="colors_x11.asp">Colors X11</a>
+<a target="_top" href="colors_crayola.asp">Colors Crayola</a>
+<a target="_top" href="colors_resene.asp">Colors Resene</a>
+<a target="_top" href="colors_xkcd.asp">Colors XKCD</a>
+
+      <br><br>
+    </div>
+  </div>
+</div>
+<div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
+  <div class='w3-row w3-white'>
+    <div class='w3-col l10 m12' id='main'>
+      <div id='mainLeaderboard' style='overflow:hidden;'>
+        <!-- MainLeaderboard-->
+
+        <!--<pre>main_leaderboard, all: [728,90][970,90][320,50][468,60]</pre>-->
+        <div id="adngin-main_leaderboard-0"></div>
+        <!-- adspace leaderboard -->
+
+      </div>
+<h1>HTML <span class="color_h1">Color Picker</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="colors_shades.asp">&#10094; Previous</a>
+<a class="w3-right w3-btn" href="colors_mixer.asp">Next &#10095;</a>
+</div>
+<hr>
+<div class="w3-row">

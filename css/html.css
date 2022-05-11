@@ -279,3 +279,11 @@ body{
 	font-size:250%;
 	color:#000000;
 	}
+	
+.text5 .ex1{
+	background:#AEAEAE;
+	box-sizing:border-box;
+	padding:20px 6px;
+	border-radius:5%;
+	color:#000000;
+	}

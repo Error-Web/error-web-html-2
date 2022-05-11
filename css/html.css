@@ -349,3 +349,67 @@ body{
 	color:#FFFFFF;
 	background: linear-gradient(110deg, #000000 60%,#FF000E 60%);
 	}
+	
+.next .next1{
+	margin-top:10px; margin-left:10px; margin-right:10px;
+
+      border-radius:10px;
+	}
+	
+.next{
+	margin:0 auto;
+	font-size:175%;
+	background-color:#000000;
+	}
+	
+.next .next1 ul{
+	list-style:none;
+	}
+	
+.next .next1 ul li{
+	display: initial;
+	}
+	
+.next .next1 ul li button{
+	background-color:#000000;
+	font-size:125%;
+	background:transparent;
+	}
+
+.next .next1 ul li button a{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-size:125%;
+	}
+	
+.nbpg{
+	margin:0 auto;
+	font-size:175%;
+	background-color:#000000;
+	}
+	
+.nbpg .next2{
+	margin-top:10px; margin-left:10px; margin-right:10px;
+
+      border-radius:10px;
+	}
+	
+.nbpg .next2 ul{
+	list-style:none;
+	}
+	
+.nbpg .next2 ul li{
+	display: initial;
+	}
+	
+.nbpg .next2 ul li button{
+	background-color:#000000;
+	font-size:125%;
+	background:transparent;
+	}
+
+.nbpg .next2 ul li button a{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-size:125%;
+	}

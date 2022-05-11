@@ -181,6 +181,13 @@ body{
 	color:#FFFFFF;
 	}
 	
+.text2 {
+	background:#FFFFFF;
+	box-sizing:border-box;
+	padding:10px 3px;
+	border-radius:5%;
+	}
+	
 .text2 h1{
 	margin:0;
 	padding:0 0 20px;
@@ -197,3 +204,4 @@ body{
 	font-size:250%;
 	color:#000000;
 	}
+	

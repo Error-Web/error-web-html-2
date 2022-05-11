@@ -324,3 +324,28 @@ body{
 .note{
 	background-color:#FFF37B;
 	}
+	
+.text7 img{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:900px;
+  height:400px;
+	}
+	
+.text7{
+	background:#FFFFFF;
+	box-sizing:border-box;
+	padding:10px 3px;
+	border-radius:5%;
+	color:#000000;
+	}
+	
+.text7 h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:350%;
+	color:#FFFFFF;
+	background: linear-gradient(110deg, #000000 60%,#FF000E 60%);
+	}
